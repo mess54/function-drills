@@ -224,15 +224,21 @@ console.log(emailCheck("jessicaalexmenna@gmail.com"))
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
-//CODE HERE
-
-
+function chocolateFrogsPurchased(gold) {
+  return Math.floor(gold / 3)
+}
+totalFrogs = chocolateFrogsPurchased(35)
+console.log(totalFrogs)
 ////////////////// PROBLEM 14 ////////////////////
 /*
   You might have noticed a slight bug in problem 12. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in problem 12 (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
 */
 
-//CODE HERE
+function chocolateFrogsPurchased(gold) {
+  return Math.floor(gold / 3)
+}
+totalFrogs = chocolateFrogsPurchased(35)
+console.log(totalFrogs)
 
 
 ////////////////// PROBLEM 15 ////////////////////
