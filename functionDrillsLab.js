@@ -61,8 +61,21 @@ console.log(sum)
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
-
+function nameCheck(name){
+  if(name === `Steven`) {
+  return ("What is up Steven?") 
+  } else if(name === `Bryan`) {
+    return ("Hey, Bryan!")
+  } else {
+    return (`Cool name, ${name}`)
+  }
+}
+let heySteven = nameCheck(`Steven`)
+console.log(heySteven)
+let heyBryan = nameCheck(`Bryan`)
+console.log(heyBryan)
+let heyRandom = nameCheck(`Jess`)
+console.log(heyRandom)
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -74,7 +87,19 @@ console.log(sum)
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+function faveColorFinder(color) {
+  if(color === "Red") {
+  return "Red is a great color"
+  } else if(color === "Green") {
+    return "Green is a solid favorite color"
+  } else if(color === "Black") {
+    return "So trendy"
+  } else {
+    return "You need to evaluate your favorite color choice"
+  }
+}
+let colorRating = faveColorFinder("Black")
+console.log(colorRating)
 
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -85,8 +110,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
-
+function printAllNames(names) {
+  for(let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+  }
+}
+printAllNames(namesArr);
 
 ////////////////// PROBLEM 8 ////////////////////
 /*
@@ -96,7 +125,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
+function thatsOdd(number) {
+  if(number % 2 === 0) {
+  return "That's not odd!"
+  } else {
+    return "That is odd indeed!"
+  }
+}
+let oddChecker = thatsOdd(3);
+console.log(oddChecker)
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -110,7 +147,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+function bigOrSmall(arr) {
+  let answers = []; 
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] > 100) {
+      answers.push("Big")
+    } else if(arr[i] <= 100) {
+      answers.push("Small")
+    }
+  }
+  return answers
+}
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+console.log(arrayEvaluator)
 
 
 ////////////////// PROBLEM 10 ////////////////////
