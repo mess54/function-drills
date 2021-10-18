@@ -170,7 +170,15 @@ let loser = 'Glimmer'
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
+function theEliminator(contestants, loser) {
+  for(let i = 0; i < contestants.length; i++) {
+    if(contestants[i].includes(loser)) {
+      contestants.splice(i, 1);
+    }
+  }
+  return contestants;
+}
+console.log(theEliminator(contestants, loser));
 
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -180,8 +188,12 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
-//CODE HERE
-
+function myNameIs(string) {
+  string = string.toUpperCase()
+    return string
+}
+console.log(myNameIs("My name is Jess"));
+console.log(myNameIs(sampleString));
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
